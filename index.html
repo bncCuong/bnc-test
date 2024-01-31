@@ -1,163 +1,287 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-<!-- Nhúng Font Awesome từ CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <!-- Nhúng Font Awesome từ CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
 
     <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Bùi Ngọc Cường</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Header Start -->
     <header class="contai-header">
-        <div class="top-header">
-            <div class="sub-header">
-                <p class="notifi-header">
-                    You are a student and students get 20% discount. <span class="sub-notifi">Learn More</span>
-                </p>
-                <ul id="link-header">
-                    <li class="option-header">
-                        <span class="separate">|</span>
-                        <span class="english">
-                            English
-                            <i class="fa-sharp fa-solid fa-chevron-down item-icon-header"></i>
-                        </span>
-                        <span class="usd">
-                            USD
-                            <i class="fa-sharp fa-solid fa-chevron-down item-icon-header"></i>
-                        </span>
-                    </li>
-                </ul>
-            </div>
-            <!-- TODO: Mobile reponsive -->
+      <div class="top-header">
+        <div class="sub-header">
+          <p class="notifi-header">
+            You are a student and students get 20% discount.
+            <span class="sub-notifi">Learn More</span>
+          </p>
+          <ul id="link-header">
+            <li class="option-header">
+              <span class="separate">|</span>
+              <span class="english">
+                English
+                <i
+                  class="fa-sharp fa-solid fa-chevron-down item-icon-header"
+                ></i>
+              </span>
+              <span class="usd">
+                USD
+                <i
+                  class="fa-sharp fa-solid fa-chevron-down item-icon-header"
+                ></i>
+              </span>
+            </li>
+          </ul>
         </div>
+        <!-- TODO: Mobile reponsive -->
+      </div>
 
-        <div class="mid-header">
-            <div class="contai-mid-header">
-                <div class="logo-header">
-                    <img src="access/Logo.svg" />
-                </div>
-                <div class="search-header">
-                    <p class="title-search">All Categories</p>
-                    <i class="fa-sharp fa-solid fa-chevron-down item-icon-header"></i>
-                    <span class="separate" style="margin-left:20px">|</span>
-                    <input placeholder="Search in 200+ product..." class="input-search-header" />
-                    <button class="button-search-header">Search</button>
-                </div>
-                <div class="action-header">
-                    <div class="login-action-header">
-                        <img src="access/icon.png" alt="user-icon" style="object-fit: contain;" />
-                        <div class="user-action-header">
-                            <p class="login-action">Login</p>
-                            <p class="account-action">Account</p>
-                        </div>
-                    </div>
-
-                    <div class="like-action-header">
-                        <img src="/access/heart.png" alt="header-icon" />
-                        <div class="notifi-action">2</div>
-                    </div>
-
-                    <div class="cart-action-header">
-                        <div class="cart-icon">
-                            <img alt="cart-icon" src="/access/cart.png" style="object-fit: contain;"/>
-                            <div class="notifi-action">2</div>
-                        </div>
-                        <div class="cart-title">
-                            <p class="title">Your Cart </p>
-                            <p class="money">$280.00</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="mid-header">
+        <div class="contai-mid-header">
+          <div class="logo-header">
+            <img src="access/Logo.svg" />
+          </div>
+          <div class="search-header">
+            <p class="title-search">All Categories</p>
+            <i class="fa-sharp fa-solid fa-chevron-down item-icon-header"></i>
+            <span class="separate" style="margin-left: 20px">|</span>
+            <input
+              placeholder="Search in 200+ product..."
+              class="input-search-header"
+            />
+            <button class="button-search-header">Search</button>
+          </div>
+          <div class="action-header">
+            <div class="login-action-header">
+              <img
+                src="access/icon.png"
+                alt="user-icon"
+                style="object-fit: contain"
+              />
+              <div class="user-action-header">
+                <p class="login-action">Login</p>
+                <p class="account-action">Account</p>
+              </div>
             </div>
-            <!-- TODO: Mobile reponsive -->
-        </div>
 
-        <div class="bottom-header">
-            <div class="contai-btm-header">
-                <div class="bar-btm-header">
-                    <img src="access/bar.png" alt="bar-icon" style="object-fit: contain;"/>
-                    <p class="bar-title">
-                        Browse All Categories
-                    </p>
-                    <span class="separate">|</span>
-                </div>
-                <ul id="menu-btm-header"></ul>
-                <div class="sale-btm-header">
-                    <img src="/access/sale.png" alt="sale-icon" style="object-fit: contain;" />
-                    <p class="bar-title">Sale $20 Off Your First Order.</p>
-                </div>
+            <div class="like-action-header">
+              <img src="/access/heart.png" alt="header-icon" />
+              <div class="notifi-action">2</div>
             </div>
-        </div>
 
+            <div class="cart-action-header">
+              <div class="cart-icon">
+                <img
+                  alt="cart-icon"
+                  src="/access/cart.png"
+                  style="object-fit: contain"
+                />
+                <div class="notifi-action">2</div>
+              </div>
+              <div class="cart-title">
+                <p class="title">Your Cart</p>
+                <p class="money">$280.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TODO: Mobile reponsive -->
+      </div>
+
+      <div class="bottom-header">
+        <div class="contai-btm-header">
+          <div class="bar-btm-header">
+            <img
+              src="access/bar.png"
+              alt="bar-icon"
+              style="object-fit: contain"
+            />
+            <p class="bar-title">Browse All Categories</p>
+            <span class="separate">|</span>
+          </div>
+          <ul id="menu-btm-header"></ul>
+          <div class="sale-btm-header">
+            <img
+              src="/access/sale.png"
+              alt="sale-icon"
+              style="object-fit: contain"
+            />
+            <p class="bar-title">Sale $20 Off Your First Order.</p>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- End Header -->
 
     <!-- Main Start -->
     <main class="contai-main">
-       <section class="sidebar-main">
+      <section class="sidebar-main">
         <div class="left-sidebar">
-            <ul id="menu-sidebar"></ul>
+          <ul id="menu-sidebar"></ul>
         </div>
         <div class="right-sidebar">
-            <div class="slider-big-contai">
-                <img src="/access/slider-big.png" alt="slider image" />
-                <div class="chevon-left">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </div>
-                <div class="chevon-right">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </div>
-                <div class="dot-middle">
-                    <span class="dot-item"></span>
-                    <span class="dot-item"></span>
-                    <span class="dot-item" style="background-color: white;"></span>
-                    <span class="dot-item"></span>
-                    <span class="dot-item"></span>
-                </div>
+          <div class="slider-big-contai">
+            <img src="/access/slider-big.png" alt="slider image" />
+            <div class="chevon-left">
+              <i class="fa-solid fa-chevron-left"></i>
             </div>
-            <div class="sub-slider-contai">
-                <img src="/access/image-1.png" alt="slider-1" class="sub-image-slider1" />
-                <img src="/access/image-2.png" alt="slider-2" class="sub-image-slider2" />
-                <img src="/access/image-3.png" alt="slider-3" class="sub-image-slider3" />
+            <div class="chevon-right">
+              <i class="fa-solid fa-chevron-right"></i>
             </div>
+            <div class="dot-middle">
+              <span class="dot-item"></span>
+              <span class="dot-item"></span>
+              <span class="dot-item" style="background-color: white"></span>
+              <span class="dot-item"></span>
+              <span class="dot-item"></span>
+            </div>
+          </div>
+          <div class="sub-slider-contai">
+            <img
+              src="/access/image-1.png"
+              alt="slider-1"
+              class="sub-image-slider1"
+            />
+            <img
+              src="/access/image-2.png"
+              alt="slider-2"
+              class="sub-image-slider2"
+            />
+            <img
+              src="/access/image-3.png"
+              alt="slider-3"
+              class="sub-image-slider3"
+            />
+          </div>
         </div>
-       </section>
+      </section>
 
-       <section class="middle-main">
+      <section class="middle-main">
         <div class="product-contai">
-            <div>
-                <div class="product-item">
-                    
-                </div>
-                <div class="product-item">
-                
-                </div>
+          <div id="group1"></div>
+          <div id="group-main">
+            <h1 class="gr-main-title">TODAY&#39;S OFFER</h1>
+            <div class="gr-main-sale-contai">
+              <div class="gr-main-sale">-20%</div>
+              <img src="/access/gift.png" alt="gift-img" />
             </div>
-            <div>
-                <div class="product-item">
-            
-                </div>
-                <div class="product-item">
-            
-                </div>
+            <img src="access/main-image.png" alt="main-img" />
+            <h1 class="gr-main-name">
+              Apple iPhone 13 Pro Max 128GB Gold Fully Unlocked
+            </h1>
+            <img src="access/rate.png" alt="rate" />
+            <span class="gr-reviews">29 reviews</span>
+            <p class="gr-main-price">
+              $128.00 <span class="gr-main-old-price">$120.00</span>
+            </p>
+
+            <div class="gr-main-time">
+              <p class="gr-time-title">Hurry up! Offer ends in:</p>
+              <div class="gr-time-olcock">
+                <div class="item-time-oclock">826</div>
+                <span>:</span>
+                <div class="item-time-oclock">29</div>
+                <span>:</span>
+                <div class="item-time-oclock">20</div>
+                <span>:</span>
+                <div class="item-time-oclock">08</div>
+              </div>
+              <div class="gr-main-bar"></div>
+              <p class="gr-sold">
+                Sold: <span class="gr-sold-number">620/896 </span>products
+              </p>
             </div>
-           
+          </div>
+          <div id="group2"></div>
         </div>
-        
-       </section>
+      </section>
     </main>
     <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="ft-contai">
+        <div class="ft-about">
+          <h1>ABOUT THE STORE</h1>
+          <p class="">Got Question? Call us 24/7</p>
+          <p class="about-phone">+222-1800-2628</p>
+          <p>
+            268 St, South New York/NY 98944, United States
+            Customersupport@example.com Info@example.com
+          </p>
+        </div>
+
+        <div class="ft-info">
+          <h1>INFOMATION</h1>
+          <ul>
+            <li>Blog Us</li>
+            <li>About Us</li>
+            <li>Delivery infomation</li>
+            <li>Privacy Policy</li>
+            <li>FeedBack</li>
+          </ul>
+        </div>
+
+        <div class="ft-quick">
+          <h1>QUICK LINK</h1>
+          <ul>
+            <li>Store Location</li>
+            <li>Orders Tracking</li>
+            <li>FAQs</li>
+          </ul>
+        </div>
+
+        <div class="ft-signup">
+          <h1>SIGN UP TO NEWSLETTER</h1>
+          <p>
+            Join 20.000+ subscribers and get a new discount coupon on every
+            Saturday. Updates information on Sales and Offers.
+          </p>
+          <div class="signup-action">
+            <input placeholder="Your email address..." />
+            <button>SUBSCRIBE</button>
+          </div>
+          <p>Subscribe for Uminex and get 20% off your first purchase.</p>
+        </div>
+      </div>
+
+      <div class="ft-copyright">
+        <p>
+          Copyright © <span class="copy-text">Uminex</span> all rights reserved.
+          Powered by
+          <span class="copy-text">Blueskytechco.</span>
+        </p>
+        <div class="ft-payment">
+          <p>Payment Method:</p>
+          <div>
+            <img src="access/visa.png" alt="card-img" />
+            <img src="access/master-card.png" alt="card-img" />
+            <img src="access/discover.png" alt="card-img" />
+            <img src="access/union.png" alt="card-img" />
+            <img src="access/amex.png" alt="card-img" />
+            <img src="access/cirrux.png" alt="card-img" />
+            <img src="access/paypal.png" alt="card-img" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
     <script src="/index.js"></script>
-</body>
+  </body>
 </html>
-
-
