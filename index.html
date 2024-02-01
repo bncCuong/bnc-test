@@ -9,16 +9,14 @@
     <!-- Nhúng Font Awesome từ CDN -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
 
     <title>Bùi Ngọc Cường</title>
   </head>
@@ -37,43 +35,30 @@
               <span class="english">
                 English
                 <i
-                  class="fa-sharp fa-solid fa-chevron-down item-icon-header"
-                ></i>
+                  class="fa-sharp fa-solid fa-chevron-down item-icon-header"></i>
               </span>
               <span class="usd">
                 USD
                 <i
-                  class="fa-sharp fa-solid fa-chevron-down item-icon-header"
-                ></i>
+                  class="fa-sharp fa-solid fa-chevron-down item-icon-header"></i>
               </span>
             </li>
           </ul>
         </div>
-        <!-- TODO: Mobile reponsive -->
       </div>
 
       <div class="mid-header">
-        <div class="contai-mid-header">
+        <div hidden class="mobile-header">
           <div class="logo-header">
             <img src="access/Logo.svg" />
           </div>
-          <div class="search-header">
-            <p class="title-search">All Categories</p>
-            <i class="fa-sharp fa-solid fa-chevron-down item-icon-header"></i>
-            <span class="separate" style="margin-left: 20px">|</span>
-            <input
-              placeholder="Search in 200+ product..."
-              class="input-search-header"
-            />
-            <button class="button-search-header">Search</button>
-          </div>
+
           <div class="action-header">
             <div class="login-action-header">
               <img
                 src="access/icon.png"
                 alt="user-icon"
-                style="object-fit: contain"
-              />
+                style="object-fit: contain" />
               <div class="user-action-header">
                 <p class="login-action">Login</p>
                 <p class="account-action">Account</p>
@@ -90,8 +75,7 @@
                 <img
                   alt="cart-icon"
                   src="/access/cart.png"
-                  style="object-fit: contain"
-                />
+                  style="object-fit: contain" />
                 <div class="notifi-action">2</div>
               </div>
               <div class="cart-title">
@@ -101,17 +85,62 @@
             </div>
           </div>
         </div>
-        <!-- TODO: Mobile reponsive -->
+        <div class="contai-mid-header">
+          <div class="logo-header">
+            <img src="access/Logo.svg" />
+          </div>
+          <div class="search-header">
+            <p class="title-search">All Categories</p>
+            <i class="fa-sharp fa-solid fa-chevron-down item-icon-header"></i>
+            <span class="separate" style="margin-left: 20px">|</span>
+            <input
+              placeholder="Search in 200+ product..."
+              class="input-search-header" />
+            <button class="button-search-header">Search</button>
+          </div>
+          <div class="action-header">
+            <div class="login-action-header">
+              <img
+                src="access/icon.png"
+                alt="user-icon"
+                style="object-fit: contain" />
+              <div class="user-action-header">
+                <p class="login-action">Login</p>
+                <p class="account-action">Account</p>
+              </div>
+            </div>
+
+            <div class="like-action-header">
+              <img src="/access/heart.png" alt="header-icon" />
+              <div class="notifi-action">2</div>
+            </div>
+
+            <div class="cart-action-header">
+              <div class="cart-icon">
+                <img
+                  alt="cart-icon"
+                  src="/access/cart.png"
+                  style="object-fit: contain" />
+                <div class="notifi-action">2</div>
+              </div>
+              <div class="cart-title">
+                <p class="title">Your Cart</p>
+                <p class="money">$280.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="bottom-header">
         <div class="contai-btm-header">
           <div class="bar-btm-header">
-            <img
-              src="access/bar.png"
-              alt="bar-icon"
-              style="object-fit: contain"
-            />
+            <div id="toggle-menu-bar">
+              <img
+                src="access/bar.png"
+                alt="bar-icon"
+                style="object-fit: contain; width: 20px; height: 20px" />
+            </div>
             <p class="bar-title">Browse All Categories</p>
             <span class="separate">|</span>
           </div>
@@ -120,11 +149,12 @@
             <img
               src="/access/sale.png"
               alt="sale-icon"
-              style="object-fit: contain"
-            />
+              style="object-fit: contain" />
             <p class="bar-title">Sale $20 Off Your First Order.</p>
           </div>
         </div>
+
+        <ul hidden id="mobile-menu-bar"></ul>
       </div>
     </header>
     <!-- End Header -->
@@ -137,7 +167,10 @@
         </div>
         <div class="right-sidebar">
           <div class="slider-big-contai">
-            <img src="/access/slider-big.png" alt="slider image" />
+            <img
+              src="/access/slider-big.png"
+              alt="slider image"
+              style="max-width: 100%" />
             <div class="chevon-left">
               <i class="fa-solid fa-chevron-left"></i>
             </div>
@@ -157,17 +190,17 @@
               src="/access/image-1.png"
               alt="slider-1"
               class="sub-image-slider1"
-            />
+              style="max-width: 100%" />
             <img
               src="/access/image-2.png"
               alt="slider-2"
               class="sub-image-slider2"
-            />
+              style="max-width: 100%" />
             <img
               src="/access/image-3.png"
               alt="slider-3"
               class="sub-image-slider3"
-            />
+              style="max-width: 100%" />
           </div>
         </div>
       </section>
@@ -179,7 +212,7 @@
             <h1 class="gr-main-title">TODAY&#39;S OFFER</h1>
             <div class="gr-main-sale-contai">
               <div class="gr-main-sale">-20%</div>
-              <img src="/access/gift.png" alt="gift-img" />
+              <img src="/access/gift.png" alt="gift-img" style="z-index: 50" />
             </div>
             <img src="access/main-image.png" alt="main-img" />
             <h1 class="gr-main-name">

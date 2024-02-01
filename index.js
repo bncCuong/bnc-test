@@ -231,6 +231,8 @@ linkHTML.forEach((item) => {
 
 // render list menu bottom-header
 const menuList = document.getElementById("menu-btm-header");
+const mobileMenuList = document.getElementById("mobile-menu-bar");
+
 const menuHTML = MENU_LIST_HEADER.map((item) => {
   const aElement = document.createElement("a");
   const liElement = document.createElement("li");
@@ -247,6 +249,24 @@ const menuHTML = MENU_LIST_HEADER.map((item) => {
 
 menuHTML.forEach((item) => {
   menuList.appendChild(item);
+});
+
+const mobileMenuHTML = MENU_LIST_HEADER.map((item) => {
+  const aElement = document.createElement("a");
+  const liElement = document.createElement("li");
+  const iElement = document.createElement("i");
+  aElement.textContent = item.title;
+  iElement.className = item.icon;
+  aElement.href = item.href;
+  liElement.appendChild(aElement);
+  liElement.appendChild(iElement);
+  liElement.className = "item-menu-header";
+  if (aElement.textContent === "Buy Uminex!") aElement.style.color = "red";
+  return liElement;
+});
+
+mobileMenuHTML.forEach((item) => {
+  mobileMenuList.appendChild(item);
 });
 
 //render list menu sidebar
@@ -325,3 +345,13 @@ group2.innerHTML = PRODUCT_LIST.map((item) => {
     </div>`
     : "";
 }).join("");
+
+const toggleBtn = document.getElementById("toggle-menu-bar");
+const dropDownMenu = document.getElementById("mobile-menu-bar");
+const toggleImg = document.querySelector("#toggle-menu-bar img");
+
+toggleBtn.onclick = function () {
+  dropDownMenu.classList.toggle("open");
+  const isOpen = dropDownMenu.classList.contains("open");
+  toggleImg.src = !isOpen ? "access/bar.png" : "access/X.png";
+};
